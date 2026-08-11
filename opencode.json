@@ -1,0 +1,11 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "default_agent": "lead",
+  "permission": {
+    "edit": {
+      "*": "allow",
+      "AGENTS.md": "ask",
+      "**/AGENTS.md": "ask"
+    }
+  }
+}
