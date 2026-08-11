@@ -1,0 +1,24 @@
+{
+  "$schema": "./gen/schemas/desktop-schema.json",
+  "productName": "nexora",
+  "version": "0.1.0",
+  "identifier": "com.nexora.app",
+  "build": {
+    "beforeDevCommand": "npm --prefix ../nexora-web run dev",
+    "beforeBuildCommand": "npm --prefix ../nexora-web run build",
+    "devUrl": "http://localhost:1420",
+    "frontendDist": "../nexora-web/dist"
+  },
+  "app": {
+    "windows": [
+      { "title": "Nexora", "width": 800, "height": 600 }
+    ],
+    "security": {
+      "csp": {
+        "default-src": "'self' customprotocol: asset:",
+        "connect-src": "ipc: http://ipc.localhost ws://localhost:1420"
+      }
+    }
+  },
+  "bundle": {}
+}
