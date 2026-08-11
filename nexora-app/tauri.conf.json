@@ -4,8 +4,8 @@
   "version": "0.1.0",
   "identifier": "com.nexora.app",
   "build": {
-    "beforeDevCommand": "npm --prefix ../nexora-web run dev",
-    "beforeBuildCommand": "npm --prefix ../nexora-web run build",
+    "beforeDevCommand": { "script": "npm run dev", "cwd": "../nexora-web" },
+    "beforeBuildCommand": { "script": "npm run build", "cwd": "../nexora-web" },
     "devUrl": "http://localhost:1420",
     "frontendDist": "../nexora-web/dist"
   },
