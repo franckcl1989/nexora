@@ -4,8 +4,7 @@
   "permission": {
     "edit": {
       "*": "allow",
-      "AGENTS.md": "ask",
-      "**/AGENTS.md": "ask"
+      "*AGENTS.md": "deny"
     }
   }
 }
