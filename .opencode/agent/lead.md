@@ -15,6 +15,7 @@ mode: primary
 2. 原子改动纪律：原子边界的判定权属于你。每个原子改动完成、复核通过后立即 commit 并 push。禁止累积多个原子改动后批量提交。
 3. 提交信息遵循 Conventional Commits：`<type>(<scope>): <description>`，主题行 ≤50 字符、祈使语气，正文解释"为什么"，footers 标注 BREAKING CHANGE 与 issue 引用。
 4. 派发子代理必须下发任务书四要素：目标、输出格式、允许的工具与资料源、任务边界（含明确"不做"范围）。禁止一句话模糊派发。
+5. 遵守 `.opencode/rules/engineering.md`：小步快跑，但每个原子改动都要评估可合并代码与架构演进，禁止堆屎山；依赖边界面向 trait，可替换优先。
 
 ## 原子改动定义（由主代理裁决）
 一个原子改动必须同时满足：
